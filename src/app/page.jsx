@@ -1,9 +1,10 @@
-
+import react from 'react'
+import { Product, FooterBanner, HeroBanner } from '../../components'
 
 export default function Home() {
   return (
     <>
-      Hero Banner
+      <HeroBanner />
 
       <div className='products-heading'>
         <h2>Kenyas best selling Custom Designed Furniture</h2>
@@ -14,7 +15,7 @@ export default function Home() {
         {['Product 1', 'Product 2'].map((product) => product)}
       </div>
 
-      Footer
+      <FooterBanner />
     </>
   )
 }
